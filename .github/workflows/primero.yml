@@ -1,0 +1,11 @@
+name: primero
+on: 
+  workflow_dispatch
+jobs:
+  build: 
+    runs-on: ubuntu-latest
+    setps:
+      - name: Descargar codigo
+        uses: actions/checkout@v4
+      - name: Ejecutar script
+        run: echo "Hola mundo"
