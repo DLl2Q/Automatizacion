@@ -1,11 +1,11 @@
 name: Flujo de trabajo para mi archivo hola mundo
 on: push
-  jobs: 
-    build:
-      name: accion de hola mundo
-      runs-on: ubuntu-latest
-      steps:
-        - uses: actions/checkout@v2
-        - uses: ./action-a
-        con: 
-          MY_NAME: "Mona"
+jobs: 
+  build:
+    name: accion de hola mundo
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: ./action-a
+      con: 
+        MY_NAME: "Mona"
