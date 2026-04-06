@@ -3,5 +3,4 @@ on:
   workflow_dispatch:
 jobs:
   call-reusable-workflow: 
-    uses: ./github/workflows/bymyselft.yaml
-    
+    uses: ./.github/workflows/bymyselft.yaml@main
