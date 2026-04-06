@@ -5,4 +5,7 @@ jobs:
   firstone:
     runs-on: ubuntu-latest
     steps: 
-      - run: ls 
+      - name: descargar repo
+        uses: actions/checkout@v4
+      - name: listar contenido
+        run: ls 
