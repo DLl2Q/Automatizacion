@@ -1,0 +1,12 @@
+on: push
+jobs:
+  build: 
+    runs-on: ubuntu-latest
+  deploy-staging: 
+    needs: build
+    if: github.ref == 'refs/heads/develop'
+    runs-on: ubuntu-latest
+  deploy-production:
+    needs: build
+    if: github-ref == 'refs/heads/main' && github.event_name == 'push'
+    runs-on: ubuntu-latest
