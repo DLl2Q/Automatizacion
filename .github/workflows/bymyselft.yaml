@@ -3,6 +3,7 @@ on:
   workflow_dispatch
 jobs:
   firstone:
+    name: descargar runner
     runs-on: ubuntu-latest
     steps: 
       - name: descargar repo
