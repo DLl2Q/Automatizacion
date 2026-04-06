@@ -16,3 +16,12 @@ jobs:
       - uses: actions/checkout@v4
       - name: ver contenido
         run: cat archivo1.txt
+  thirdone:
+    env:
+      VAR1: yo
+    runs-on: ubuntu-latest
+    if: success()
+    steps:
+      - uses: actions/checkout@v4
+      - name: subir contenido
+        run: echo $VAR1 >> archivo1.txt
