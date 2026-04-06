@@ -9,3 +9,8 @@ on:
 jobs:
   correr:
     runs-on: debian-latest
+    steps:
+      - uses: actions/checout@v4
+      - name: mensaje
+        run: echo "pipeline funciona bien"
+      
