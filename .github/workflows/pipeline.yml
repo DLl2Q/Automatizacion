@@ -7,4 +7,5 @@ on:
   schedule:
     - cron: "0 2 * * 1" #Todos los Lunes 2am
 jobs:
-  
+  correr:
+    runs-on: debian-latest
