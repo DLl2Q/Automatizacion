@@ -1,0 +1,8 @@
+name: creador por mi
+on: 
+  workflow_dispatch
+jobs:
+  firstone:
+    runs-on: ubuntu-latest
+    steps: 
+      - run: ls 
