@@ -13,5 +13,6 @@ jobs:
     runs-on: ubuntu-latest
     needs: firstone
     steps:
+      - uses: actions/checkout@v4
       - name: ver contenido
         run: cat archivo1.txt
