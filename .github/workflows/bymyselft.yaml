@@ -1,6 +1,7 @@
 name: creador por mi
 on: 
-  workflow_dispatch
+  - workflow_dispatch
+  - workflow_call
 jobs:
   firstone:
     runs-on: ubuntu-latest
