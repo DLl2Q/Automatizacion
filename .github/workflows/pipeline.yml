@@ -12,5 +12,5 @@ jobs:
     steps:
       - uses: actions/checout@v4
       - name: mensaje
-        run: echo "pipeline funciona bien"
+        run: echo "deberia esto funcionar ?"
       
