@@ -6,8 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint .",
-    "test:coverage": "echo \"No tests yet\"",
-    "build": "echo \"No build step\""
+    "test:coverage": "echo \"No tests coverage yet\"",
+    "build": "echo \"No build step\"",
+    "test:integration": "echo \"No tests integration yet\""
   },
   "repository": {
     "type": "git",
