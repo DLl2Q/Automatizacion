@@ -8,7 +8,7 @@ on:
     - cron: "0 2 * * 1" #Todos los Lunes 2am
 jobs:
   correr:
-    runs-on: debian-latest
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checout@v4
       - name: mensaje
