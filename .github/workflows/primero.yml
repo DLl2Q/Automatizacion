@@ -3,7 +3,7 @@ on:
   workflow_dispatch
 jobs:
   build: 
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest # idk 
     steps:
       - name: yo no puse esto
         uses: actions/checkout@v4
