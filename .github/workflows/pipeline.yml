@@ -3,7 +3,7 @@ on:
   push:
     branches: [main,develop]
   pull_request:
-    branches: [main]
+    branch: main
   schedule:
     - cron: "0 2 * * 1" #Todos los Lunes 2am
 jobs:
@@ -13,4 +13,3 @@ jobs:
       - uses: actions/checkout@v4
       - name: mensaje
         run: echo "deberia esto funcionar ?"
-      
