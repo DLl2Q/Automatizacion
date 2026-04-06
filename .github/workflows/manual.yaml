@@ -1,0 +1,21 @@
+name: ejecucion manual
+on:
+  workflow_dispatch:
+    inputs:
+      enviroment:
+        description: "Ambiente de despliegue"
+        required: true
+        default: "pre-produccion"
+        type: choice
+        options:
+          - pre-produccion
+          - produccion
+      version:
+        description: "Version a desplegar"
+        required: true
+        type: string
+jobs:
+  primero:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "hola mundo"
