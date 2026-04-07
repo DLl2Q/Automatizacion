@@ -1,0 +1,9 @@
+name: workflow trasladando input
+on: workflow_dispatch
+jobs:
+  contenedor:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: ./.github/actions/
+        with:
+          MY_NAME: "DLLACSA"
