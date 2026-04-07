@@ -1,3 +1,3 @@
 FROM alpine:3.18
 
-CMD echo "Hola mundo desde Docker"
+CMD sh -c 'echo "Hola $INPUT_MY_NAME"'
