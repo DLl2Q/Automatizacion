@@ -5,8 +5,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      #- name: Print event type
-        #run: echo "Evento: ${{ github.event_name }}"
-      - uses: ./.github/actions
+      - name: Print event type
+        run: echo ${{ github.event.action }}
+      #- uses: ./.github/actions
         with:
           MY_NAME: "DLLACSA"
