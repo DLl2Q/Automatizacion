@@ -12,6 +12,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: muestrame
-        run: echo "evento desencadenado {{ github.event_name }}"
+        run: echo "evento desencadenado ${{ github.event_name }}"
       - name: mensaje
         run: echo "deberia esto funcionar ?"
