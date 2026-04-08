@@ -6,7 +6,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Print event type
-        run: echo ${{ github.event.action }}
+        run: echo "${{ github.event.action }}"
       - uses: ./.github/actions
         with:
           MY_NAME: "DLLACSA"
