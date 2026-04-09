@@ -1,0 +1,28 @@
+name: usando cache
+on:
+  workflow_dispatch
+jobs:
+  primero:
+    runs-on: ubuntu-latest
+    steps:
+      - name: descargar codigo
+        uses: actions/checkout@v4
+      - name: listar archivos
+        run: ls -l
+      - name: subir a la cache
+        uses: actions/upload-artifact@v2
+        with:
+          name: archivo1
+          path: archivo1.txt
+  segundo:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: descargar la cache
+        uses: actions/download-artifact@v2
+        with:
+          path: archivo1.txt
+      - name: listar archivos
+        run: ls -l
+      - name: ver contenido
+        run: cat archivo1.txt
+
