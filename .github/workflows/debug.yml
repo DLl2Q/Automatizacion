@@ -1,6 +1,5 @@
 name: nombre para mi prueba
-on:
-  workflow_dispatch
+on: workflow_dispatch
 jobs:
   primero:
     runs-on: ubuntu-latest
