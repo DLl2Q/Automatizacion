@@ -1,4 +1,4 @@
-name: Debug
+name: nombre para mi prueba
 on: 
   workflow_dispatch
 jobs:
