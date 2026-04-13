@@ -1,5 +1,5 @@
-name: quisiera
-on: 
+name: nombre para mi prueba
+on:
   workflow_dispatch
 jobs:
   primero:
