@@ -1,7 +1,10 @@
 name: nombre para mi prueba
+
 on: workflow_dispatch
+
 jobs:
   primero:
     runs-on: ubuntu-latest
     steps:
-      runs: echo "Set variable MyVariable to true" >> $DEBUG_MESSAGE
+      - name: Set variable
+        run: echo "Set variable MyVariable to true" >> $DEBUG_MESSAGE
