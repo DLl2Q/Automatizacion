@@ -7,4 +7,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Set variable
-        run: echo "Set variable MyVariable to true" >> $DEBUG_MESSAGE
+        run: echo	"::debug::Set	variable	myVariable	to	true"
