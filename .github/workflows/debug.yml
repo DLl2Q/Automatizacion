@@ -6,7 +6,9 @@ jobs:
   primero:
     runs-on: ubuntu-latest
     steps:
+      - name: Antes variable
+        run: echo $GITHUB_ENV
       - name: Set variable
         run: echo	"FOO=bar" >> $GITHUB_ENV
-      - name: Mostrar variable
+      - name: Despues variable
         run: echo $GITHUB_ENV
