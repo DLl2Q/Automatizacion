@@ -7,4 +7,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Set variable
-        run: echo	"::debug::Set	variable	myVariable	to	true"
+        run: echo	"FOO=bar" >> $GITHUB_ENV
+      - name: Mostrar variable
+        run: echo $GITHUB_ENV
