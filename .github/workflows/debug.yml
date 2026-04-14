@@ -11,4 +11,4 @@ jobs:
       - name: Set variable
         run: echo	"FOO=bar" >> $GITHUB_ENV
       - name: Despues variable
-        run: echo $GITHUB_ENV
+        run: echo $FOO
